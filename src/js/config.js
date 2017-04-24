@@ -11,12 +11,12 @@ function Config ($stateProvider, $urlRouterProvider) {
          templateUrl: 'templates/home.tpl.html',
          controller: 'HomeController as homeVm'
      })
-     .state('root.home.about', {
+     .state('root.about', {
          url: '/about',
          templateUrl: 'templates/about.tpl.html',
          controller: 'HomeController as homeVm'
      })
-     .state('root.home.work', {
+     .state('root.work', {
          url: '/work',
          templateUrl: 'templates/work.tpl.html',
          controller: 'HomeController as homeVm'
