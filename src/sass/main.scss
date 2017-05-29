@@ -55,6 +55,7 @@ nav {
         filter: opacity(.4);
         margin: 0 10%;
         transform: translateY(.95);
+        border-radius: 2px;
 
         &:hover {
             transition: filter 1.6s linear;
@@ -79,6 +80,11 @@ nav {
 
 .footer-copyright {
     font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+    padding-top: 1%;
+    text-align: right;
 }
 
 .page-footer {
