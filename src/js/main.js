@@ -2,19 +2,12 @@ import angular from 'angular';
 import 'angular-ui-router';
 import 'angular-materialize';
 
-
-
 import AppConfig from './config';
-// import SERVER from './server';
-// import setup from './setup';
-
-//import AccountService from './services/account';
 
 import LayoutController from './controllers/layout';
 import HomeController from './controllers/home';
 import ConnectController from './controllers/connect';
 import WorkController from './controllers/work';
-
 
 
 angular

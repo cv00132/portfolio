@@ -1,4 +1,4 @@
-function Config ($stateProvider, $urlRouterProvider) {
+function AppConfig ($stateProvider, $urlRouterProvider) {
 
    $stateProvider
      .state('root', {
@@ -30,6 +30,6 @@ function Config ($stateProvider, $urlRouterProvider) {
    $urlRouterProvider.otherwise('/not-found');
 }
 
-Config.$inject = ['$stateProvider', '$urlRouterProvider'];
+AppConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-export default Config;
+export default AppConfig;

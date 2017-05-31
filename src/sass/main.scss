@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    background: grey;
 }
 
 nav ul a,
@@ -26,6 +27,27 @@ p {
   .parallax-container .section {
     width: 100%;
   }
+//
+// #banner1{
+//     background: url("../../images/norbert-levajsics-184254.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position-y: -366px;
+// }
+//
+// #banner2{
+//     background: url("../../images/jingyi-wang-193838.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position-y: -366px;
+// }
+//
+// #banner3{
+//     background: url("../../images/ashim-d-silva-106275.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position-y: -366px;
+// }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
