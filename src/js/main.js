@@ -12,7 +12,7 @@ import AppConfig from './config';
 
 import LayoutController from './controllers/layout';
 import HomeController from './controllers/home';
-import AboutController from './controllers/about';
+import ConnectController from './controllers/connect';
 import WorkController from './controllers/work';
 
 
@@ -22,5 +22,5 @@ angular
     .config(AppConfig)
     .controller('LayoutController', LayoutController)
     .controller('HomeController', HomeController)
-    .controller('AboutController', AboutController)
-    .controller('WorkController',WorkController)
+    .controller('ConnectController', ConnectController)
+    .controller('WorkController', WorkController)

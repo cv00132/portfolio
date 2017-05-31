@@ -12,18 +12,18 @@ function Config ($stateProvider, $urlRouterProvider) {
          controller: 'HomeController as homeVm'
      })
      .state('root.about', {
-         url: '/about',
-         templateUrl: 'templates/about.tpl.html',
-         controller: 'HomeController as homeVm'
+         url: '/connect',
+         templateUrl: 'templates/connect.tpl.html',
+         controller: 'ConnectController as connectVm'
      })
      .state('root.work', {
          url: '/work',
          templateUrl: 'templates/work.tpl.html',
-         controller: 'HomeController as homeVm'
+         controller: 'WorkController as workVm'
      })
-     .state('page-not-found', {
+     .state('root.page-not-found', {
          url: '/not-found',
-         template: '<h2>No such page. Haha. Youre dumb.</h2>'
+         template: '<h2>No such page.</h2>'
      });
 
    $urlRouterProvider.when('', '/home');
