@@ -1,6 +1,5 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import 'angular-materialize';
 
 import AppConfig from './config';
 
@@ -11,7 +10,7 @@ import WorkController from './controllers/work';
 
 
 angular
-    .module('app', ['ui.router', 'ui.materialize'])
+    .module('app', ['ui.router'])
     .config(AppConfig)
     .controller('LayoutController', LayoutController)
     .controller('HomeController', HomeController)

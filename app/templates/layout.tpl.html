@@ -1,34 +1,40 @@
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">CV</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#!/home">Home</a></li>
-            <li><a href="#!/work">Work</a></li>
-            <li><a href="#!/connect">Connect</a></li>
-        </ul>
-        <a href="#" class="button-collapse" data-activates="nav-mobile" data-sidenav="left" data-menuwidth="500" data-closeonclick="false">
-            <i class="material-icons">menu</i>
+<nav class="navbar navbar-menu is-transparent">
+    <div class="navbar-brand navbar-start">
+        <a class="navbar-item" href="http://bulma.io">
+          <img src="http://bulma.io/images/bulma-logo.png" width="112" height="28">
         </a>
+    </div>
+    <div class="navbar-end">
+        <a class="navbar-item" href="#!/home">Home</a>
+        <a class="navbar-item" href="#!/work">Work</a>
+        <a class="navbar-item" href="#!/connect">Connect</a>
+    </div>
+
+    <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 </nav>
 <div class="body-content" ui-view></div>
 
-<footer class="page-footer teal">
+<footer class="footer">
   <div class="container">
-    <div class="row">
-        <h5 class="white-text">Connect</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
-        </ul>
-      </div>
+        <h2 class="title">Connect</h2>
+          <a class="subtitle" href="https://github.com/cv00132">
+              <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+              GitHub
+          </a>
+          <a class="subtitle" href="https://www.linkedin.com/in/cory-vaughan/">
+              <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+              LinkedIn
+          </a>
+          <a class="subtitle" href="https://twitter.com/CoryVaughan13">
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              Twitter
+          </a>
     </div>
-  </div>
   <div class="footer-copyright">
-    <div class="container">
-    Made using <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-    </div>
+    Made using <a href="http://bulma.io">Bulma</a>
   </div>
 </footer>
