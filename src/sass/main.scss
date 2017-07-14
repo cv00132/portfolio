@@ -5,7 +5,13 @@
 }
 
 .navbar {
-  background: #009688;
+  background: #0074B1;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, .5);
+
+  .navbar-item{
+      color: #F5F5F5;
+      font-family: 'Montserrat', sans-serif;
+  }
 }
 
 p {
@@ -15,7 +21,12 @@ p {
 
 .brand-logo {
     width: 5%;
-    background: rgba(0,0,0,.1);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
+    img {
+        margin-right: 12%;
+    }
 }
 
 .button-collapse {
@@ -23,6 +34,11 @@ p {
 }
 
 //Home template
+.section {
+    z-index: 0;
+    background: rgba(0,0,0,0);
+}
+
 #banner1{
     background: url("../../images/norbert-levajsics-184254.jpg");
     background-attachment: fixed;
@@ -31,6 +47,8 @@ p {
     background-position-y: -360px;
     width: 100%;
     height: 382px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    z-index: 1;
 
     h1 {
         font-family: 'Vollkorn', serif;
@@ -57,9 +75,10 @@ p {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -360px;
+    //background-position-y: -360px;
     width: 100%;
     height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 
     h4 {
         font-family: 'Ubuntu', sans-serif;
@@ -74,11 +93,12 @@ p {
 #banner3{
     background: url("../../images/ashim-d-silva-106275.jpg");
     background-attachment: fixed;
-    background-size: cover;
+    //background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -360px;
+    //background-position-y: -360px;
     width: 100%;
     height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 
     h4 {
         font-family: 'Ubuntu', sans-serif;
@@ -119,15 +139,10 @@ p {
     h2 {
         font-size: 1.8rem;
     }
-
-    .quote {
-        font-style: italic;
-        display: block;
-    }
 }
 
 .tools {
-    margin: 0 auto;
+    margin: 4% auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -153,38 +168,60 @@ p {
 
 //Work template
 #project-title {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
+
 .projects {
 
     img{
         width: 100%;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
         border-radius: 5px;
+        margin: 1% 0;
     }
 }
 
 
-//Contact template
-.resume iframe {
+//Connect template
+.resume {
     display: block;
-    width: 100%;
-    height: 100%;
+
+    object {
+        margin: 5% 10%;
+        min-width: 80%;
+        min-height: 100%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+        margin: 0 10% 5% 10%;
+        text-align: center;
+
+        a {
+            margin: 0 10px;
+        }
+    }
 }
 
-footer {
+.footer {
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
     text-align: right;
+    padding: 3rem 1.5rem;
 
     .footer-copyright{
         text-align: left;
         width: 90%;
     }
 
-    .subtitle {
-        display: block;
+    .social {
+        margin: 0 20%;
+    }
+
+    a {
+        color: #0074B1;
     }
 }
 
@@ -199,9 +236,6 @@ footer {
 }
 
 @media only screen and (max-width : 600px) {
-  .section {
-    top: 0;
-  }
 
   footer.page-footer {
     margin: 0;

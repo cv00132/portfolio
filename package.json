@@ -1,7 +1,7 @@
 {
-  "name": "tiy-jan-2017-template",
+  "name": "cory-vaughan-portfolio",
   "version": "1.0.0",
-  "description": "This is a basic starter template.",
+  "description": "Portfolio site.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register || true",
