@@ -1,12 +1,19 @@
 @import "bulma";
 
+$box-shadow: 0px 3px 17px 1px rgba(0, 0, 0, .5);
+$icon-shadow: 1px 1px 5px rgba(0,0,0,.5);
+
 * {
     box-sizing: border-box;
 }
 
+html {
+    background: #EDEDED;
+}
+
 .navbar {
   background: #0074B1;
-  box-shadow: 2px 0px 5px rgba(0, 0, 0, .5);
+  box-shadow: $box-shadow;
 
   .navbar-item{
       color: #F5F5F5;
@@ -20,7 +27,6 @@ p {
 }
 
 .brand-logo {
-    width: 5%;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
 
@@ -29,8 +35,10 @@ p {
     }
 }
 
-.button-collapse {
-    color: #26a69a;
+.title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #4a4a4a;
 }
 
 //Home template
@@ -40,15 +48,13 @@ p {
 }
 
 #banner1{
-    background: url("../../images/norbert-levajsics-184254.jpg");
+    background: url("/images/norbert-levajsics-184254.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -360px;
+    background-position-y: -195px;
     width: 100%;
-    height: 382px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
-    z-index: 1;
+    box-shadow: $box-shadow;
 
     h1 {
         font-family: 'Vollkorn', serif;
@@ -71,14 +77,13 @@ p {
 }
 
 #banner2{
-    background: url("../../images/jingyi-wang-193838.jpg");
+    background: url("/images/jingyi-wang-193838.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    //background-position-y: -360px;
     width: 100%;
     height: 300px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    box-shadow: $box-shadow;
 
     h4 {
         font-family: 'Ubuntu', sans-serif;
@@ -91,14 +96,13 @@ p {
 }
 
 #banner3{
-    background: url("../../images/ashim-d-silva-106275.jpg");
+    background: url("/images/ashim-d-silva-106275.jpg");
     background-attachment: fixed;
-    //background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    //background-position-y: -360px;
     width: 100%;
     height: 300px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    box-shadow: $box-shadow;
 
     h4 {
         font-family: 'Ubuntu', sans-serif;
@@ -125,15 +129,15 @@ p {
 
     .flash {
         color: #FBBC05;
-        text-shadow: 1px 1px 5px grey;
+        text-shadow: $icon-shadow;
     }
     .user-exp {
         color: #2196F3;
-        text-shadow: 1px 1px 5px grey;
+        text-shadow: $icon-shadow;
     }
     .group {
         color: #EA4335;
-        text-shadow: 1px 1px 5px grey;
+        text-shadow: $icon-shadow;
     }
 
     h2 {
@@ -177,7 +181,7 @@ p {
 
     img{
         width: 100%;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: $box-shadow;
         border-radius: 5px;
         margin: 1% 0;
     }
@@ -192,7 +196,7 @@ p {
         margin: 5% 10%;
         min-width: 80%;
         min-height: 100%;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: $box-shadow;
     }
 
     p {
@@ -208,8 +212,9 @@ p {
 .footer {
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
-    text-align: right;
     padding: 3rem 1.5rem;
+    text-align: center;
+    background: #DADADA;
 
     .footer-copyright{
         text-align: left;
@@ -217,27 +222,146 @@ p {
     }
 
     .social {
-        margin: 0 20%;
+        i {
+            margin: 0 5%;
+            color: #0074B1;
+
+        }
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+
+    #banner1{
+        background: url("/images/norbert-levajsics-184254.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-y;
+        background-position: 50% -286px;
+        width: 100%;
+        height: 300px;
     }
 
-    a {
+}
+
+@media only screen and (max-width : 736px) {
+
+    #banner1{
+        background: url("/images/norbert-levajsics-184254.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% -286px;
+        width: 100%;
+
+        h1 {
+            font-family: 'Vollkorn', serif;
+            text-shadow: 1px 1px 5px black;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin: 2% 0;
+        }
+
+        h5 {
+            font-family: 'Ubuntu', sans-serif;
+            text-shadow: 1px 1px 5px black;
+            text-align: center;
+            color: white;
+            font-size: 1.15rem;
+            margin: 0 auto;
+            width: 66%;
+        }
+    }
+
+    #banner2{
+        background: url("/images/jingyi-wang-193838.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        //background-position-y: -360px;
+        width: 100%;
+        height: 300px;
+
+        h4 {
+            font-family: 'Ubuntu', sans-serif;
+            text-shadow: 1px 1px 5px black;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            margin: 6%;
+        }
+    }
+
+    #banner3{
+        background: url("/images/ashim-d-silva-106275.jpg");
+        background-attachment: fixed;
+        //background-size: cover;
+        background-repeat: no-repeat;
+        //background-position-y: -360px;
+        width: 100%;
+        height: 300px;
+
+        h4 {
+            font-family: 'Ubuntu', sans-serif;
+            text-shadow: 1px 1px 5px black;
+            color: white;
+            font-size: 2rem;
+            margin: 5%;
+            text-align: center;
+        }
+    }
+
+    .icon-block {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3%;
+
+        i {
+            font-size: 3.5rem !important;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .about-me {
+        text-align: center;
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
+
+    .tools {
+        margin: 4% auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dev-tools {
+        display: inline-block;
+        text-align: center;
+        width: 140px;
+        margin: 2%;
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 2% 0;
+        }
+
+        .caption {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.2rem;
+            display: block;
+        }
+    }
+
+    .footer {
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
         color: #0074B1;
     }
-}
 
-@media only screen and (max-width : 992px) {
-  .section {
-    position: absolute;
-    top: 40%;
-  }
-  .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-
-  footer.page-footer {
-    margin: 0;
-  }
 }

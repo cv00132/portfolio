@@ -26,7 +26,7 @@ function AppConfig ($stateProvider, $urlRouterProvider) {
          template: '<h2>No such page.</h2>'
      });
 
-   $urlRouterProvider.when('', '/home');
+   $urlRouterProvider.when('/', '/home');
    $urlRouterProvider.otherwise('/not-found');
 }
 

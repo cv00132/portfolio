@@ -1,7 +1,7 @@
 function HomeController () {
    let vm = this;
 
-   
+
 }
 
 HomeController.$inject = [];

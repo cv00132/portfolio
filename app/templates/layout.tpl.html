@@ -1,26 +1,26 @@
-<nav class="navbar navbar-menu is-transparent">
-    <div class="navbar-brand navbar-start brand-logo">
-        <a class="navbar-item" href="#!">
-          <img src="../images/CV_logo.png">
-          CoryV
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-item brand-logo" href="#!/home">
+          <img src="/images/CV_logo.png">
         </a>
+        <div class="navbar-burger" data-target="navMenu" ng-click="layoutVm.hamburgerToggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    <div class="navbar-end">
-        <a class="navbar-item" href="#!/home">Home</a>
-        <a class="navbar-item" href="#!/work">Work</a>
-        <a class="navbar-item" href="#!/connect">Connect</a>
-    </div>
-
-    <div class="navbar-burger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end" ng-click="layoutVm.hamburgerToggle()">
+            <a class="navbar-item" href="#!/home">Home</a>
+            <a class="navbar-item" href="#!/work">Work</a>
+            <a class="navbar-item" href="#!/connect">Connect</a>
+        </div>
     </div>
 </nav>
 <div class="body-content" ui-view></div>
 
 <footer class="footer">
-  <div class="social level">
+  <div class="social">
           <a href="https://github.com/cv00132" title="GitHub" target="blank">
               <i class="fa fa-github fa-2x" aria-hidden="true"></i>
           </a>
