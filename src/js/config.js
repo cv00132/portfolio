@@ -21,12 +21,7 @@ function AppConfig ($stateProvider, $urlRouterProvider) {
          templateUrl: 'templates/work.tpl.html',
          controller: 'WorkController as workVm'
      })
-     .state('root.page-not-found', {
-         url: '/not-found',
-         template: '<h2>No such page.</h2>'
-     });
-    $urlRouterProvider.when('', '/home');
-    $urlRouterProvider.otherwise('/not-found');
+    $urlRouterProvider.otherwise('/home');
 }
 
 AppConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
