@@ -11,10 +11,10 @@ function AppConfig ($stateProvider, $urlRouterProvider) {
          templateUrl: 'templates/home.tpl.html',
          controller: 'HomeController as homeVm'
      })
-     .state('root.about', {
-         url: '/connect',
-         templateUrl: 'templates/connect.tpl.html',
-         controller: 'ConnectController as connectVm'
+     .state('root.resume', {
+         url: '/resume',
+         templateUrl: 'templates/resume.tpl.html',
+         controller: 'ResumeController as resumeVm'
      })
      .state('root.work', {
          url: '/work',
