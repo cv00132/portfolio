@@ -245,13 +245,12 @@ p {
 }
 
 @media only screen and (max-width : 736px) {
-
+//Home template for mobile
     #banner1{
         background: url("/images/norbert-levajsics-184254.jpg");
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50% -286px;
         width: 100%;
 
         h1 {
@@ -279,7 +278,6 @@ p {
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-        //background-position-y: -360px;
         width: 100%;
         height: 300px;
 
@@ -296,9 +294,8 @@ p {
     #banner3{
         background: url("/images/ashim-d-silva-106275.jpg");
         background-attachment: fixed;
-        //background-size: cover;
+        background-size: cover;
         background-repeat: no-repeat;
-        //background-position-y: -360px;
         width: 100%;
         height: 300px;
 
@@ -326,36 +323,57 @@ p {
             font-size: 1.8rem;
         }
     }
+    //
+    // .about-me {
+    //     text-align: center;
+    //     font-size: 1.2rem;
+    //     word-wrap: break-word;
+    // }
+    //
+    // .tools {
+    //     margin: 4% auto;
+    //     align-items: center;
+    //     justify-content: space-between;
+    // }
+    //
+    // .dev-tools {
+    //     display: inline-block;
+    //     text-align: center;
+    //     width: 140px;
+    //     margin: 2%;
+    //
+    //     img {
+    //         width: 100px;
+    //         height: 100px;
+    //         margin: 2% 0;
+    //     }
+    //
+    //     .caption {
+    //         font-family: 'Lato', sans-serif;
+    //         font-size: 1.2rem;
+    //         display: block;
+    //     }
+    // }
 
-    .about-me {
+//Work template for mobile
+    #project-title {
+        font-size: 3rem;
         text-align: center;
-        font-size: 1.2rem;
-        word-wrap: break-word;
+        font-family: 'Montserrat', sans-serif;
     }
 
-    .tools {
-        margin: 4% auto;
-        align-items: center;
-        justify-content: space-between;
-    }
+//Resume template for mobile
+    .resume {
+        display: block;
 
-    .dev-tools {
-        display: inline-block;
-        text-align: center;
-        width: 140px;
-        margin: 2%;
-
-        img {
-            width: 100px;
-            height: 100px;
-            margin: 2% 0;
+        object {
+            width: 80%;
+            height: 440px;
+            margin: 5% 10%;
+            box-shadow: $box-shadow;
+            overflow: scroll;
         }
 
-        .caption {
-            font-family: 'Lato', sans-serif;
-            font-size: 1.2rem;
-            display: block;
-        }
     }
 
     .footer {
