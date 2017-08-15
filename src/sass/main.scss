@@ -59,7 +59,7 @@ p {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -195px;
+    background-position-y: -380px;
     width: 100%;
     box-shadow: $box-shadow;
 
@@ -152,6 +152,15 @@ p {
     }
 }
 
+.about-me {
+    p {
+        text-align: center;
+        a {
+            margin: 1% 10% 0 10%;
+        }
+    }
+}
+
 .tools {
     margin: 4% auto;
     align-items: center;
@@ -186,6 +195,7 @@ p {
 
 .projects {
 
+
     img{
         width: 100%;
         box-shadow: $box-shadow;
@@ -199,7 +209,7 @@ p {
 .resume {
     display: block;
 
-    object {
+    iframe {
         width: 80%;
         height: 960px;
         margin: 5% 10%;
@@ -207,7 +217,8 @@ p {
     }
 
     p {
-        margin: 0 10% 5% 10%;
+        width: 80%;
+        margin: 0% 0% 5% 10%;
         text-align: center;
 
         a {
@@ -245,8 +256,6 @@ p {
 //Home template for mobile
     #banner1{
         background-attachment: fixed;
-        background-position: center;
-        background-size: auto;
         width: 100%;
         h1 {
             font-family: 'Vollkorn', serif;
