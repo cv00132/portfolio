@@ -15,10 +15,17 @@ html {
   background: #0074B1;
   box-shadow: $box-shadow;
 
-  .navbar-item{
+  .navbar-item {
       color: #F5F5F5;
       font-family: 'Montserrat', sans-serif;
   }
+}
+
+.navbar-burger {
+    i {
+        color: white;
+        margin: 20% 25%;
+    }
 }
 
 p {
@@ -52,7 +59,7 @@ p {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -195px;
+    background-position-y: -380px;
     width: 100%;
     box-shadow: $box-shadow;
 
@@ -145,6 +152,15 @@ p {
     }
 }
 
+.about-me {
+    p {
+        text-align: center;
+        a {
+            margin: 1% 10% 0 10%;
+        }
+    }
+}
+
 .tools {
     margin: 4% auto;
     align-items: center;
@@ -179,6 +195,7 @@ p {
 
 .projects {
 
+
     img{
         width: 100%;
         box-shadow: $box-shadow;
@@ -192,7 +209,7 @@ p {
 .resume {
     display: block;
 
-    object {
+    iframe {
         width: 80%;
         height: 960px;
         margin: 5% 10%;
@@ -200,7 +217,8 @@ p {
     }
 
     p {
-        margin: 0 10% 5% 10%;
+        width: 80%;
+        margin: 0% 0% 5% 10%;
         text-align: center;
 
         a {
@@ -232,27 +250,13 @@ p {
 
 @media only screen and (max-width : 1000px) {
 
-    #banner1{
-        background: url("/images/norbert-levajsics-184254.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: repeat-y;
-        background-position: 50% -286px;
-        width: 100%;
-        height: 300px;
-    }
-
 }
 
 @media only screen and (max-width : 736px) {
 //Home template for mobile
     #banner1{
-        background: url("/images/norbert-levajsics-184254.jpg");
         background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
         width: 100%;
-
         h1 {
             font-family: 'Vollkorn', serif;
             text-shadow: 1px 1px 5px black;
@@ -274,13 +278,9 @@ p {
     }
 
     #banner2{
-        background: url("/images/jingyi-wang-193838.jpg");
         background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: auto;
         width: 100%;
-        height: 300px;
-
         h4 {
             font-family: 'Ubuntu', sans-serif;
             text-shadow: 1px 1px 5px black;
@@ -292,13 +292,9 @@ p {
     }
 
     #banner3{
-        background: url("/images/ashim-d-silva-106275.jpg");
         background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: auto;
         width: 100%;
-        height: 300px;
-
         h4 {
             font-family: 'Ubuntu', sans-serif;
             text-shadow: 1px 1px 5px black;
@@ -323,37 +319,7 @@ p {
             font-size: 1.8rem;
         }
     }
-    //
-    // .about-me {
-    //     text-align: center;
-    //     font-size: 1.2rem;
-    //     word-wrap: break-word;
-    // }
-    //
-    // .tools {
-    //     margin: 4% auto;
-    //     align-items: center;
-    //     justify-content: space-between;
-    // }
-    //
-    // .dev-tools {
-    //     display: inline-block;
-    //     text-align: center;
-    //     width: 140px;
-    //     margin: 2%;
-    //
-    //     img {
-    //         width: 100px;
-    //         height: 100px;
-    //         margin: 2% 0;
-    //     }
-    //
-    //     .caption {
-    //         font-family: 'Lato', sans-serif;
-    //         font-size: 1.2rem;
-    //         display: block;
-    //     }
-    // }
+
 
 //Work template for mobile
     #project-title {
@@ -365,15 +331,6 @@ p {
 //Resume template for mobile
     .resume {
         display: block;
-
-        object {
-            width: 80%;
-            height: 440px;
-            margin: 5% 10%;
-            box-shadow: $box-shadow;
-            overflow: scroll;
-        }
-
     }
 
     .footer {
