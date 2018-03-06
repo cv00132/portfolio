@@ -192,15 +192,15 @@ p {
 .resume {
     display: block;
 
-    object {
+    iframe {
         width: 80%;
         height: 960px;
-        margin: 5% 10%;
+        margin: 0% 10%;
         box-shadow: $box-shadow;
     }
 
     p {
-        margin: 0 10% 5% 10%;
+        margin: 3% 10%;
         text-align: center;
 
         a {
