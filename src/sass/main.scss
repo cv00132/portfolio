@@ -213,13 +213,17 @@ p {
     iframe {
         width: 80%;
         height: 960px;
-        margin: 5% 10%;
+        margin: 0% 10%;
         box-shadow: $box-shadow;
     }
 
     p {
+<<<<<<< HEAD
+        margin: 3% 10%;
+=======
         width: 80%;
         margin: 0% 0% 5% 10%;
+>>>>>>> master
         text-align: center;
 
         a {
