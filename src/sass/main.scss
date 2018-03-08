@@ -2,6 +2,7 @@
 
 $box-shadow: 0px 3px 17px 1px rgba(0, 0, 0, .5);
 $icon-shadow: 1px 1px 5px rgba(0,0,0,.5);
+$banner-height: 450px;
 
 * {
     box-sizing: border-box;
@@ -12,7 +13,7 @@ html {
 }
 
 #page-loader {
-    margin: 40%;
+    margin: 25% 45%;
 }
 
 .navbar {
@@ -40,6 +41,7 @@ p {
 .brand-logo {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+    width: 160px;
 
     img {
         margin-right: 12%;
@@ -54,7 +56,6 @@ p {
 
 //Home template
 .section {
-    z-index: 0;
     background: rgba(0,0,0,0);
 }
 
@@ -63,8 +64,9 @@ p {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -380px;
+    background-position-y: 135%;
     width: 100%;
+    height: $banner-height;
     box-shadow: $box-shadow;
 
     h1 {
@@ -73,7 +75,7 @@ p {
         text-align: center;
         color: white;
         font-size: 6rem;
-        margin: 2% 0;
+        padding: 5% 0 0 0;
     }
 
     h5 {
@@ -93,16 +95,16 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: $banner-height;
     box-shadow: $box-shadow;
 
     h4 {
         font-family: 'Ubuntu', sans-serif;
         text-shadow: 1px 1px 5px black;
         color: white;
-        font-size: 2rem;
+        font-size: 3.5rem;
+        padding: 10% 0%;
         text-align: center;
-        margin: 6%;
     }
 }
 
@@ -112,22 +114,22 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: $banner-height;
     box-shadow: $box-shadow;
 
     h4 {
         font-family: 'Ubuntu', sans-serif;
         text-shadow: 1px 1px 5px black;
         color: white;
-        font-size: 2rem;
-        margin: 5%;
+        font-size: 3.5rem;
+        padding: 10% 0%;
         text-align: center;
     }
 }
 
 .icon-section {
     align-items: baseline !important;
-    padding: 1.5%;
+    padding: 3.5%;
 }
 
 .icon-block {
@@ -136,7 +138,7 @@ p {
     text-align: center;
 
     i {
-        font-size: 3.5rem !important;
+        font-size: 6.5rem !important;
     }
 
     .flash {
@@ -153,7 +155,7 @@ p {
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }
 
@@ -192,10 +194,12 @@ p {
 }
 
 //Work template
-#project-title {
+.template-title {
     font-size: 5rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 5px black;
+    color: white;
 }
 
 .projects {
@@ -210,7 +214,7 @@ p {
 }
 
 
-//Connect template
+//Resume template
 .resume {
     display: block;
 
@@ -326,7 +330,7 @@ p {
 
 
 //Work template for mobile
-    #project-title {
+    .template-title {
         font-size: 3rem;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
