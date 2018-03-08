@@ -2,7 +2,7 @@
 
 $box-shadow: 0px 3px 17px 1px rgba(0, 0, 0, .5);
 $icon-shadow: 1px 1px 5px rgba(0,0,0,.5);
-$banner-height: 500px;
+$banner-height: 450px;
 
 * {
     box-sizing: border-box;
@@ -57,7 +57,6 @@ p {
 //Home template
 .section {
     background: rgba(0,0,0,0);
-    height: $banner-height;
 }
 
 #banner1{
@@ -130,7 +129,7 @@ p {
 
 .icon-section {
     align-items: baseline !important;
-    padding: 1.5%;
+    padding: 3.5%;
 }
 
 .icon-block {
